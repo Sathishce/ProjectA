@@ -1,0 +1,81 @@
+{
+  "sys": {
+    "space": {
+      "sys": {
+        "type": "Link",
+        "linkType": "Space",
+        "id": "i5kkknzh1ywi"
+      }
+    },
+    "id": "quote",
+    "type": "ContentType",
+    "createdAt": "2024-01-15T08:16:20.215Z",
+    "updatedAt": "2024-02-27T11:48:14.371Z",
+    "environment": {
+      "sys": {
+        "id": "Dev",
+        "type": "Link",
+        "linkType": "Environment"
+      }
+    },
+    "revision": 7
+  },
+  "displayField": "internalName",
+  "name": "Quote",
+  "description": "Contains Author, Designation, Text and Image fields.",
+  "fields": [
+    {
+      "id": "internalName",
+      "name": "Internal name",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "author",
+      "name": "Author",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "designation",
+      "name": "Designation",
+      "type": "Symbol",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "text",
+      "name": "Text",
+      "type": "RichText",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "image",
+      "name": "Image",
+      "type": "Link",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "image"
+          ]
+        }
+      ]
+    }
+  ]
+}

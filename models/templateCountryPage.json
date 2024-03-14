@@ -1,0 +1,205 @@
+{
+  "sys": {
+    "space": {
+      "sys": {
+        "type": "Link",
+        "linkType": "Space",
+        "id": "i5kkknzh1ywi"
+      }
+    },
+    "id": "templateCountryPage",
+    "type": "ContentType",
+    "createdAt": "2024-03-11T10:23:57.338Z",
+    "updatedAt": "2024-03-11T11:02:49.621Z",
+    "environment": {
+      "sys": {
+        "id": "Dev",
+        "type": "Link",
+        "linkType": "Environment"
+      }
+    },
+    "revision": 4
+  },
+  "displayField": "internalName",
+  "name": "Template - Country Page",
+  "description": "Template for Country page",
+  "fields": [
+    {
+      "id": "internalName",
+      "name": "Internal name",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "banner",
+      "name": "Banner",
+      "type": "Link",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "banner",
+            "homeHeroBanner"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "servicesCarousel",
+      "name": "Services Carousel",
+      "type": "Link",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "carouselContainer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "banner2",
+      "name": "Banner 2",
+      "type": "Link",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "banner"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imageAndItem1",
+      "name": "Image and Item 1",
+      "type": "Link",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "imageAndItem"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imageAndItem2",
+      "name": "Image and Item 2",
+      "type": "Link",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "imageAndItem"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imageAndItem3",
+      "name": "Image and Item 3",
+      "type": "Link",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "imageAndItem"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "testimonialsCarousel",
+      "name": "Testimonials Carousel",
+      "type": "Link",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "carouselContainer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "textAndItem1",
+      "name": "Text and Item 1",
+      "type": "Link",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "textAndItem"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "itemItemWithHeading",
+      "name": "Item Item with heading",
+      "type": "Link",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "itemItemWithHeading"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "additionalComponents",
+      "name": "Additional Components",
+      "type": "Array",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "items": {
+        "type": "Link",
+        "validations": [],
+        "linkType": "Entry"
+      }
+    }
+  ]
+}

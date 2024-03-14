@@ -1,0 +1,98 @@
+{
+  "sys": {
+    "space": {
+      "sys": {
+        "type": "Link",
+        "linkType": "Space",
+        "id": "i5kkknzh1ywi"
+      }
+    },
+    "id": "accordionItem",
+    "type": "ContentType",
+    "createdAt": "2024-01-15T09:02:11.125Z",
+    "updatedAt": "2024-02-20T12:04:31.390Z",
+    "environment": {
+      "sys": {
+        "id": "Dev",
+        "type": "Link",
+        "linkType": "Environment"
+      }
+    },
+    "revision": 7
+  },
+  "displayField": "internalName",
+  "name": "Accordion Item",
+  "description": "This items can be added to accordion container.",
+  "fields": [
+    {
+      "id": "internalName",
+      "name": "Internal name",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "heading",
+      "name": "Heading",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "icon",
+      "name": "Icon",
+      "type": "Link",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "image"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "content",
+      "name": "Content",
+      "type": "Array",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false,
+      "items": {
+        "type": "Link",
+        "validations": [
+          {
+            "linkContentType": [
+              "accordionContainer",
+              "contentGrid",
+              "cta",
+              "image",
+              "itemItemWithHeading",
+              "labelAndValue",
+              "navigationLink",
+              "quote",
+              "separatorBlock",
+              "socialMedia",
+              "statsContainer",
+              "textAndImage",
+              "textAndItem",
+              "textBlock",
+              "textCard",
+              "video"
+            ]
+          }
+        ],
+        "linkType": "Entry"
+      }
+    }
+  ]
+}

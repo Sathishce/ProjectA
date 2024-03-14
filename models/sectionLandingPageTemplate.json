@@ -1,0 +1,63 @@
+{
+  "sys": {
+    "space": {
+      "sys": {
+        "type": "Link",
+        "linkType": "Space",
+        "id": "i5kkknzh1ywi"
+      }
+    },
+    "id": "sectionLandingPageTemplate",
+    "type": "ContentType",
+    "createdAt": "2024-02-19T07:15:48.383Z",
+    "updatedAt": "2024-02-19T07:18:22.510Z",
+    "environment": {
+      "sys": {
+        "id": "Dev",
+        "type": "Link",
+        "linkType": "Environment"
+      }
+    },
+    "revision": 5
+  },
+  "displayField": "internalName",
+  "name": "Section landing page template",
+  "description": "",
+  "fields": [
+    {
+      "id": "internalName",
+      "name": "Internal name",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "sections",
+      "name": "Sections",
+      "type": "Array",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false,
+      "items": {
+        "type": "Link",
+        "validations": [
+          {
+            "linkContentType": [
+              "banner",
+              "carouselContainer",
+              "itemItemWithHeading",
+              "textAndItem",
+              "imageAndItem",
+              "people",
+              "tab"
+            ]
+          }
+        ],
+        "linkType": "Entry"
+      }
+    }
+  ]
+}

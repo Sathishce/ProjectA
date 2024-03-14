@@ -1,0 +1,107 @@
+{
+  "sys": {
+    "space": {
+      "sys": {
+        "type": "Link",
+        "linkType": "Space",
+        "id": "i5kkknzh1ywi"
+      }
+    },
+    "id": "qaTemplate",
+    "type": "ContentType",
+    "createdAt": "2024-01-31T10:50:23.326Z",
+    "updatedAt": "2024-01-31T10:50:23.326Z",
+    "environment": {
+      "sys": {
+        "id": "Dev",
+        "type": "Link",
+        "linkType": "Environment"
+      }
+    },
+    "revision": 1
+  },
+  "displayField": "internalName",
+  "name": "qa-template",
+  "description": "This template contains component modals like CTA, accordion, alert etc..",
+  "fields": [
+    {
+      "id": "internalName",
+      "name": "Internal name",
+      "type": "Symbol",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "slug",
+      "name": "Slug",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "sections",
+      "name": "Sections",
+      "type": "Array",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "items": {
+        "type": "Link",
+        "validations": [
+          {
+            "linkContentType": [
+              "alert",
+              "banner",
+              "cta",
+              "image",
+              "imageAndItem",
+              "menuitemGroup",
+              "metaData",
+              "separatorBlock",
+              "socialMedia",
+              "textAndItem",
+              "textBlock",
+              "primaryNavigation",
+              "statsContainer",
+              "header",
+              "itemItemWithHeading",
+              "accordionContainer",
+              "accordionItem",
+              "homeHeroBanner",
+              "test",
+              "tab",
+              "bioPage",
+              "people",
+              "video",
+              "quote",
+              "testimonialBlock"
+            ]
+          }
+        ],
+        "linkType": "Entry"
+      }
+    },
+    {
+      "id": "metaData",
+      "name": "Meta Data",
+      "type": "Link",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "metaData"
+          ]
+        }
+      ]
+    }
+  ]
+}

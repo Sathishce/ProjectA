@@ -1,0 +1,170 @@
+{
+  "sys": {
+    "space": {
+      "sys": {
+        "type": "Link",
+        "linkType": "Space",
+        "id": "i5kkknzh1ywi"
+      }
+    },
+    "id": "banner",
+    "type": "ContentType",
+    "createdAt": "2023-12-27T09:49:33.520Z",
+    "updatedAt": "2024-03-01T05:59:04.864Z",
+    "environment": {
+      "sys": {
+        "id": "Dev",
+        "type": "Link",
+        "linkType": "Environment"
+      }
+    },
+    "revision": 37
+  },
+  "displayField": "internalName",
+  "name": "Banner",
+  "description": "Banner used for all inside pages.",
+  "fields": [
+    {
+      "id": "internalName",
+      "name": "Internal name",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "heading",
+      "name": "Heading",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "headingValue",
+      "name": "Heading value",
+      "type": "Symbol",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "subheading",
+      "name": "Subheading",
+      "type": "Symbol",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "text",
+      "name": "Text",
+      "type": "Text",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "form",
+      "name": "Form",
+      "type": "Link",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry"
+    },
+    {
+      "id": "formAlignment",
+      "name": "Form alignment",
+      "type": "Symbol",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "backgroundImage",
+      "name": "Background image",
+      "type": "Link",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "image"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contentAlignment",
+      "name": "Content alignment",
+      "type": "Symbol",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "textColor",
+      "name": "Text color",
+      "type": "Symbol",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "backgroundColor",
+      "name": "Background color",
+      "type": "Symbol",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "cta",
+      "name": "CTA",
+      "type": "Link",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "cta"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "image",
+      "name": "Image",
+      "type": "Link",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "image"
+          ]
+        }
+      ]
+    }
+  ]
+}

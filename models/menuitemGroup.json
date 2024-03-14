@@ -1,0 +1,66 @@
+{
+  "sys": {
+    "space": {
+      "sys": {
+        "type": "Link",
+        "linkType": "Space",
+        "id": "i5kkknzh1ywi"
+      }
+    },
+    "id": "menuitemGroup",
+    "type": "ContentType",
+    "createdAt": "2023-12-28T08:04:15.751Z",
+    "updatedAt": "2024-02-07T09:52:36.568Z",
+    "environment": {
+      "sys": {
+        "id": "Dev",
+        "type": "Link",
+        "linkType": "Environment"
+      }
+    },
+    "revision": 7
+  },
+  "displayField": "internalName",
+  "name": "Menuitem group",
+  "description": "Group of navigation links",
+  "fields": [
+    {
+      "id": "internalName",
+      "name": "Internal name",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "sectionTitle",
+      "name": "Section title",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "childItems",
+      "name": "Child items",
+      "type": "Array",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false,
+      "items": {
+        "type": "Link",
+        "validations": [
+          {
+            "linkContentType": [
+              "navigationLink"
+            ]
+          }
+        ],
+        "linkType": "Entry"
+      }
+    }
+  ]
+}

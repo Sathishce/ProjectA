@@ -1,0 +1,71 @@
+{
+  "sys": {
+    "space": {
+      "sys": {
+        "type": "Link",
+        "linkType": "Space",
+        "id": "i5kkknzh1ywi"
+      }
+    },
+    "id": "header",
+    "type": "ContentType",
+    "createdAt": "2024-01-15T11:00:30.479Z",
+    "updatedAt": "2024-01-15T11:01:00.697Z",
+    "environment": {
+      "sys": {
+        "id": "Dev",
+        "type": "Link",
+        "linkType": "Environment"
+      }
+    },
+    "revision": 2
+  },
+  "displayField": "internalName",
+  "name": "Header",
+  "description": "This header is a standalone component/widget",
+  "fields": [
+    {
+      "id": "internalName",
+      "name": "Internal name",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "primaryNavigation",
+      "name": "Primary Navigation",
+      "type": "Link",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "primaryNavigation"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "topNavigation",
+      "name": "Top Navigation",
+      "type": "Link",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "topNavigation"
+          ]
+        }
+      ]
+    }
+  ]
+}

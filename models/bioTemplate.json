@@ -1,0 +1,57 @@
+{
+  "sys": {
+    "space": {
+      "sys": {
+        "type": "Link",
+        "linkType": "Space",
+        "id": "i5kkknzh1ywi"
+      }
+    },
+    "id": "bioTemplate",
+    "type": "ContentType",
+    "createdAt": "2024-02-16T06:57:01.452Z",
+    "updatedAt": "2024-02-16T07:00:33.070Z",
+    "environment": {
+      "sys": {
+        "id": "Dev",
+        "type": "Link",
+        "linkType": "Environment"
+      }
+    },
+    "revision": 4
+  },
+  "displayField": "internalName",
+  "name": "Bio template",
+  "description": "",
+  "fields": [
+    {
+      "id": "internalName",
+      "name": "Internal name",
+      "type": "Symbol",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "sections",
+      "name": "Sections",
+      "type": "Array",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "items": {
+        "type": "Link",
+        "validations": [
+          {
+            "linkContentType": [
+              "bioPage"
+            ]
+          }
+        ],
+        "linkType": "Entry"
+      }
+    }
+  ]
+}

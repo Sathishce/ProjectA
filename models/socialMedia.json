@@ -1,0 +1,72 @@
+{
+  "sys": {
+    "space": {
+      "sys": {
+        "type": "Link",
+        "linkType": "Space",
+        "id": "i5kkknzh1ywi"
+      }
+    },
+    "id": "socialMedia",
+    "type": "ContentType",
+    "createdAt": "2023-12-28T12:46:28.167Z",
+    "updatedAt": "2023-12-28T12:46:28.167Z",
+    "environment": {
+      "sys": {
+        "id": "Dev",
+        "type": "Link",
+        "linkType": "Environment"
+      }
+    },
+    "revision": 1
+  },
+  "displayField": "internalName",
+  "name": "Social Media",
+  "description": "Social media item like facebook , instagram etc...",
+  "fields": [
+    {
+      "id": "internalName",
+      "name": "Internal name",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "icon",
+      "name": "Icon",
+      "type": "Link",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "image"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "link",
+      "name": "Link",
+      "type": "Symbol",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "ariaLabel",
+      "name": "Aria label",
+      "type": "Symbol",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false
+    }
+  ]
+}

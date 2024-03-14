@@ -1,0 +1,190 @@
+{
+  "sys": {
+    "space": {
+      "sys": {
+        "type": "Link",
+        "linkType": "Space",
+        "id": "i5kkknzh1ywi"
+      }
+    },
+    "id": "carouselContainer",
+    "type": "ContentType",
+    "createdAt": "2024-01-15T07:08:13.286Z",
+    "updatedAt": "2024-03-05T05:00:04.768Z",
+    "environment": {
+      "sys": {
+        "id": "Dev",
+        "type": "Link",
+        "linkType": "Environment"
+      }
+    },
+    "revision": 21
+  },
+  "displayField": "internalName",
+  "name": "Carousel Container",
+  "description": "Wrapper for carousel cards",
+  "fields": [
+    {
+      "id": "internalName",
+      "name": "Internal name",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "heading",
+      "name": "Heading",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "headingValue",
+      "name": "Heading value",
+      "type": "Symbol",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "subHeading",
+      "name": "Sub heading",
+      "type": "Symbol",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "text",
+      "name": "Text",
+      "type": "Text",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "alignment",
+      "name": "Alignment",
+      "type": "Symbol",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "cta",
+      "name": "CTA",
+      "type": "Link",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "cta"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ctaPosition",
+      "name": "CTA position",
+      "type": "Symbol",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "richText",
+      "name": "Rich text",
+      "type": "RichText",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "image",
+      "name": "Image",
+      "type": "Link",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "image"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "backgroundColor",
+      "name": "Background color",
+      "type": "Symbol",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "carouselType",
+      "name": "Carousel type",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "carouselItems",
+      "name": "Carousel items",
+      "type": "Array",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "items": {
+        "type": "Link",
+        "validations": [
+          {
+            "linkContentType": [
+              "carouselItem",
+              "quote"
+            ]
+          }
+        ],
+        "linkType": "Entry"
+      }
+    },
+    {
+      "id": "dynamicCarouselFilter",
+      "name": "Dynamic Carousel Filter",
+      "type": "Link",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "dynamicCarouselFilter"
+          ]
+        }
+      ]
+    }
+  ]
+}

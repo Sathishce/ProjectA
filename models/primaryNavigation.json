@@ -1,0 +1,109 @@
+{
+  "sys": {
+    "space": {
+      "sys": {
+        "type": "Link",
+        "linkType": "Space",
+        "id": "i5kkknzh1ywi"
+      }
+    },
+    "id": "primaryNavigation",
+    "type": "ContentType",
+    "createdAt": "2023-12-29T05:50:40.357Z",
+    "updatedAt": "2024-02-05T11:43:23.397Z",
+    "environment": {
+      "sys": {
+        "id": "Dev",
+        "type": "Link",
+        "linkType": "Environment"
+      }
+    },
+    "revision": 8
+  },
+  "displayField": "internalName",
+  "name": "Primary Navigation",
+  "description": "Main Navigation element of the website",
+  "fields": [
+    {
+      "id": "internalName",
+      "name": "Internal name",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "homepageLogo",
+      "name": "Homepage logo",
+      "type": "Link",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "image"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "commonLogo",
+      "name": "Common logo",
+      "type": "Link",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "image"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "menuItems",
+      "name": "Menu items",
+      "type": "Array",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false,
+      "items": {
+        "type": "Link",
+        "validations": [
+          {
+            "linkContentType": [
+              "navigationLink"
+            ]
+          }
+        ],
+        "linkType": "Entry"
+      }
+    },
+    {
+      "id": "imageLink",
+      "name": "Image link",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "ariaLabel",
+      "name": "Aria label",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    }
+  ]
+}

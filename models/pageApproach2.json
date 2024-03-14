@@ -1,0 +1,62 @@
+{
+  "sys": {
+    "space": {
+      "sys": {
+        "type": "Link",
+        "linkType": "Space",
+        "id": "i5kkknzh1ywi"
+      }
+    },
+    "id": "pageApproach2",
+    "type": "ContentType",
+    "createdAt": "2024-02-28T11:27:20.469Z",
+    "updatedAt": "2024-02-28T11:27:55.847Z",
+    "environment": {
+      "sys": {
+        "id": "Dev",
+        "type": "Link",
+        "linkType": "Environment"
+      }
+    },
+    "revision": 3
+  },
+  "displayField": "slug",
+  "name": "Page Approach 2",
+  "description": "Pages for Bayada.com",
+  "fields": [
+    {
+      "id": "slug",
+      "name": "Slug",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "templateReference",
+      "name": "Template Reference",
+      "type": "Link",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "demoTemplate",
+            "demoTemplateBlock",
+            "serviceTemplate",
+            "bioPage",
+            "bioTemplate",
+            "sectionLandingPageTemplate",
+            "standalonePageTemplate",
+            "standAlonePage",
+            "templateServicePage"
+          ]
+        }
+      ]
+    }
+  ]
+}

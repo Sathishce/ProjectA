@@ -1,0 +1,146 @@
+{
+  "sys": {
+    "space": {
+      "sys": {
+        "type": "Link",
+        "linkType": "Space",
+        "id": "i5kkknzh1ywi"
+      }
+    },
+    "id": "contentGrid",
+    "type": "ContentType",
+    "createdAt": "2024-01-18T13:58:24.739Z",
+    "updatedAt": "2024-02-20T11:58:49.204Z",
+    "environment": {
+      "sys": {
+        "id": "Dev",
+        "type": "Link",
+        "linkType": "Environment"
+      }
+    },
+    "revision": 15
+  },
+  "displayField": "internalName",
+  "name": "Content grid",
+  "description": "Grid of Items arranged in colums with equal spacing ",
+  "fields": [
+    {
+      "id": "internalName",
+      "name": "Internal Name",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "items",
+      "name": "Items",
+      "type": "Array",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false,
+      "items": {
+        "type": "Link",
+        "validations": [
+          {
+            "linkContentType": [
+              "cta",
+              "image",
+              "textAndImage",
+              "textBlock",
+              "textCard",
+              "video",
+              "separatorBlock",
+              "socialMedia",
+              "navigationLink"
+            ]
+          }
+        ],
+        "linkType": "Entry"
+      }
+    },
+    {
+      "id": "columns",
+      "name": "Columns",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "spacing",
+      "name": "Spacing",
+      "type": "Symbol",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "columnsTabletView",
+      "name": "Columns tablet view",
+      "type": "Symbol",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "columnsMobileView",
+      "name": "Columns mobile view",
+      "type": "Symbol",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "heading",
+      "name": "Heading",
+      "type": "Symbol",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "headingValue",
+      "name": "Heading value",
+      "type": "Symbol",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "headingAlignment",
+      "name": "Heading Alignment",
+      "type": "Symbol",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "itemArrangementType",
+      "name": "Item Arrangement Type",
+      "type": "Symbol",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "itemAlignment",
+      "name": "Item Alignment",
+      "type": "Symbol",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false
+    }
+  ]
+}

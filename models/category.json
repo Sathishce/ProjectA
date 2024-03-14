@@ -1,0 +1,37 @@
+{
+  "sys": {
+    "space": {
+      "sys": {
+        "type": "Link",
+        "linkType": "Space",
+        "id": "i5kkknzh1ywi"
+      }
+    },
+    "id": "category",
+    "type": "ContentType",
+    "createdAt": "2024-01-15T07:39:25.237Z",
+    "updatedAt": "2024-02-13T11:10:17.778Z",
+    "environment": {
+      "sys": {
+        "id": "Dev",
+        "type": "Link",
+        "linkType": "Environment"
+      }
+    },
+    "revision": 5
+  },
+  "displayField": "category",
+  "name": "Category",
+  "description": " Categorization of each resources like articles",
+  "fields": [
+    {
+      "id": "category",
+      "name": "Category",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    }
+  ]
+}

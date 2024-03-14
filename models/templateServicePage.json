@@ -1,0 +1,213 @@
+{
+  "sys": {
+    "space": {
+      "sys": {
+        "type": "Link",
+        "linkType": "Space",
+        "id": "i5kkknzh1ywi"
+      }
+    },
+    "id": "templateServicePage",
+    "type": "ContentType",
+    "createdAt": "2024-02-28T08:51:53.425Z",
+    "updatedAt": "2024-03-11T08:08:01.720Z",
+    "environment": {
+      "sys": {
+        "id": "Dev",
+        "type": "Link",
+        "linkType": "Environment"
+      }
+    },
+    "revision": 14
+  },
+  "displayField": "fgk2AEHDh509vFqi",
+  "name": "Template - Service Page",
+  "description": "",
+  "fields": [
+    {
+      "id": "banner",
+      "name": "Banner",
+      "type": "Link",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "banner",
+            "homeHeroBanner"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "serviceDetailsCarousel",
+      "name": "Service details carousel",
+      "type": "Link",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "carouselContainer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imageAndItem1",
+      "name": "Image and Item 1",
+      "type": "Link",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "imageAndItem"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "textAndItem1",
+      "name": "Text and Item 1",
+      "type": "Link",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "textAndItem"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imageAndItem2",
+      "name": "Image and Item 2",
+      "type": "Link",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "imageAndItem"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "textAndItem2",
+      "name": "Text and Item 2",
+      "type": "Link",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "textAndItem"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "testimonialsCarousel",
+      "name": "Testimonials carousel",
+      "type": "Link",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "carouselContainer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imageAndItem3",
+      "name": "Image and Item 3",
+      "type": "Link",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "imageAndItem"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "banner2",
+      "name": "Banner 2",
+      "type": "Link",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "banner"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "textAndItem3",
+      "name": "Text and Item 3",
+      "type": "Link",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "textAndItem"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "additionalComponents",
+      "name": "Additional Components",
+      "type": "Array",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "items": {
+        "type": "Link",
+        "validations": [],
+        "linkType": "Entry"
+      }
+    }
+  ]
+}

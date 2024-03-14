@@ -1,0 +1,46 @@
+{
+  "sys": {
+    "space": {
+      "sys": {
+        "type": "Link",
+        "linkType": "Space",
+        "id": "i5kkknzh1ywi"
+      }
+    },
+    "id": "separatorBlock",
+    "type": "ContentType",
+    "createdAt": "2023-12-27T06:04:33.115Z",
+    "updatedAt": "2023-12-28T12:48:52.475Z",
+    "environment": {
+      "sys": {
+        "id": "Dev",
+        "type": "Link",
+        "linkType": "Environment"
+      }
+    },
+    "revision": 5
+  },
+  "displayField": "internalName",
+  "name": "Separator Block",
+  "description": "A line separating two content blocks. Color:  #707070(Grey)",
+  "fields": [
+    {
+      "id": "internalName",
+      "name": "Internal name",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "lineWidth",
+      "name": "Line width",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    }
+  ]
+}

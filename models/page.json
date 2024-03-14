@@ -1,0 +1,188 @@
+{
+  "sys": {
+    "space": {
+      "sys": {
+        "type": "Link",
+        "linkType": "Space",
+        "id": "i5kkknzh1ywi"
+      }
+    },
+    "id": "page",
+    "type": "ContentType",
+    "createdAt": "2024-02-14T10:45:27.754Z",
+    "updatedAt": "2024-03-11T12:24:53.817Z",
+    "environment": {
+      "sys": {
+        "id": "Dev",
+        "type": "Link",
+        "linkType": "Environment"
+      }
+    },
+    "revision": 32
+  },
+  "displayField": "slug",
+  "name": "Page",
+  "description": "Pages for Bayada.com",
+  "fields": [
+    {
+      "id": "slug",
+      "name": "Slug",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "browserPageTitle",
+      "name": "Page title",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "metaDescription",
+      "name": "Meta Description",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "primaryNavigation",
+      "name": "Primary Navigation",
+      "type": "Link",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "primaryNavigation"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "topNavigation",
+      "name": "Top navigation",
+      "type": "Link",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "topNavigation"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "canonicalUrl",
+      "name": "Canonical URL\t",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "socialTitle",
+      "name": "Og Title",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "socialImage",
+      "name": "Og Image",
+      "type": "Link",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "image"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "favIcon",
+      "name": "Fav Icon",
+      "type": "Link",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "image"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "templateReference",
+      "name": "Template Reference",
+      "type": "Link",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "templateServicePage",
+            "demoNew",
+            "templateStandalonePage",
+            "templateCountryPage"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "footer",
+      "name": "Footer",
+      "type": "Link",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "footer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "parentPage",
+      "name": "Parent Page",
+      "type": "Link",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "sys": {
+    "space": {
+      "sys": {
+        "type": "Link",
+        "linkType": "Space",
+        "id": "i5kkknzh1ywi"
+      }
+    },
+    "id": "demoNew",
+    "type": "ContentType",
+    "createdAt": "2024-03-05T07:30:58.083Z",
+    "updatedAt": "2024-03-06T04:39:36.313Z",
+    "environment": {
+      "sys": {
+        "id": "Dev",
+        "type": "Link",
+        "linkType": "Environment"
+      }
+    },
+    "revision": 5
+  },
+  "displayField": "internalName",
+  "name": "Demo New",
+  "description": "",
+  "fields": [
+    {
+      "id": "internalName",
+      "name": "Internal name",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "additionalContents",
+      "name": "Additional contents",
+      "type": "Array",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "items": {
+        "type": "Link",
+        "validations": [],
+        "linkType": "Entry"
+      }
+    }
+  ]
+}

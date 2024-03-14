@@ -1,0 +1,120 @@
+{
+  "sys": {
+    "space": {
+      "sys": {
+        "type": "Link",
+        "linkType": "Space",
+        "id": "i5kkknzh1ywi"
+      }
+    },
+    "id": "tabItem",
+    "type": "ContentType",
+    "createdAt": "2024-01-15T07:53:33.521Z",
+    "updatedAt": "2024-02-20T12:00:10.085Z",
+    "environment": {
+      "sys": {
+        "id": "Dev",
+        "type": "Link",
+        "linkType": "Environment"
+      }
+    },
+    "revision": 8
+  },
+  "displayField": "internalName",
+  "name": "Tab Item",
+  "description": "Tab Items containing its label, icon and content ",
+  "fields": [
+    {
+      "id": "internalName",
+      "name": "Internal name",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "tabLabel",
+      "name": "Tab label",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "icon",
+      "name": "Icon",
+      "type": "Link",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "image"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "iconPosition",
+      "name": "Icon position",
+      "type": "Symbol",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "content",
+      "name": "Content",
+      "type": "Array",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false,
+      "items": {
+        "type": "Link",
+        "validations": [
+          {
+            "linkContentType": [
+              "accordionContainer",
+              "carouselContainer",
+              "contentGrid",
+              "cta",
+              "image",
+              "imageAndItem",
+              "itemItemWithHeading",
+              "labelAndValue",
+              "navigationLink",
+              "people",
+              "quote",
+              "separatorBlock",
+              "socialMedia",
+              "tab",
+              "statsContainer",
+              "textAndImage",
+              "textAndItem",
+              "textBlock",
+              "textCard",
+              "video"
+            ]
+          }
+        ],
+        "linkType": "Entry"
+      }
+    },
+    {
+      "id": "contentPosition",
+      "name": "Content Position",
+      "type": "Symbol",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false
+    }
+  ]
+}

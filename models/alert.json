@@ -1,0 +1,72 @@
+{
+  "sys": {
+    "space": {
+      "sys": {
+        "type": "Link",
+        "linkType": "Space",
+        "id": "i5kkknzh1ywi"
+      }
+    },
+    "id": "alert",
+    "type": "ContentType",
+    "createdAt": "2023-12-28T05:35:10.446Z",
+    "updatedAt": "2023-12-28T11:01:06.802Z",
+    "environment": {
+      "sys": {
+        "id": "Dev",
+        "type": "Link",
+        "linkType": "Environment"
+      }
+    },
+    "revision": 2
+  },
+  "displayField": "internalName",
+  "name": "Alert",
+  "description": "Alert model contains Long text, CTA reference and Expiration Date fields",
+  "fields": [
+    {
+      "id": "internalName",
+      "name": "Internal name",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "text",
+      "name": "Text",
+      "type": "Text",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "cta",
+      "name": "CTA",
+      "type": "Link",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "cta"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "expirationDate",
+      "name": "Expiration date",
+      "type": "Date",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false
+    }
+  ]
+}

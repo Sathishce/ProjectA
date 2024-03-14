@@ -1,0 +1,55 @@
+{
+  "sys": {
+    "space": {
+      "sys": {
+        "type": "Link",
+        "linkType": "Space",
+        "id": "i5kkknzh1ywi"
+      }
+    },
+    "id": "labelAndValue",
+    "type": "ContentType",
+    "createdAt": "2024-01-15T11:22:34.654Z",
+    "updatedAt": "2024-01-15T11:22:34.654Z",
+    "environment": {
+      "sys": {
+        "id": "Dev",
+        "type": "Link",
+        "linkType": "Environment"
+      }
+    },
+    "revision": 1
+  },
+  "displayField": "internalName",
+  "name": "Label and Value",
+  "description": "Contain label and values, can be used for statistics.",
+  "fields": [
+    {
+      "id": "internalName",
+      "name": "Internal name",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "label",
+      "name": "Label",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "value",
+      "name": "Value",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    }
+  ]
+}

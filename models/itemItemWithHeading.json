@@ -1,0 +1,168 @@
+{
+  "sys": {
+    "space": {
+      "sys": {
+        "type": "Link",
+        "linkType": "Space",
+        "id": "i5kkknzh1ywi"
+      }
+    },
+    "id": "itemItemWithHeading",
+    "type": "ContentType",
+    "createdAt": "2024-01-15T07:26:51.354Z",
+    "updatedAt": "2024-03-05T04:56:07.445Z",
+    "environment": {
+      "sys": {
+        "id": "Dev",
+        "type": "Link",
+        "linkType": "Environment"
+      }
+    },
+    "revision": 11
+  },
+  "displayField": "internalName",
+  "name": "Item item with heading",
+  "description": "Item item with heading for the inside pages.",
+  "fields": [
+    {
+      "id": "internalName",
+      "name": "Internal name",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "heading",
+      "name": "Heading",
+      "type": "Symbol",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "headingValue",
+      "name": "Heading value",
+      "type": "Symbol",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "subheading",
+      "name": "Subheading",
+      "type": "Symbol",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "alignment",
+      "name": "Alignment",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "itemLeft",
+      "name": "Item left",
+      "type": "Array",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "items": {
+        "type": "Link",
+        "validations": [
+          {
+            "linkContentType": [
+              "accordionContainer",
+              "contentGrid",
+              "cta",
+              "image",
+              "itemItemWithHeading",
+              "navigationLink",
+              "separatorBlock",
+              "socialMedia",
+              "statsContainer",
+              "textAndImage",
+              "textAndItem",
+              "textBlock",
+              "testimonialBlock",
+              "textCard",
+              "video"
+            ]
+          }
+        ],
+        "linkType": "Entry"
+      }
+    },
+    {
+      "id": "itemRight",
+      "name": "Item right",
+      "type": "Array",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "items": {
+        "type": "Link",
+        "validations": [
+          {
+            "linkContentType": [
+              "accordionContainer",
+              "contentGrid",
+              "cta",
+              "image",
+              "itemItemWithHeading",
+              "navigationLink",
+              "separatorBlock",
+              "socialMedia",
+              "statsContainer",
+              "textAndImage",
+              "textAndItem",
+              "textBlock",
+              "textCard",
+              "video",
+              "testimonialBlock"
+            ]
+          }
+        ],
+        "linkType": "Entry"
+      }
+    },
+    {
+      "id": "verticalSeparator",
+      "name": "Vertical separator",
+      "type": "Symbol",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "itemLeftAlignment",
+      "name": "Item left alignment",
+      "type": "Symbol",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "itemRightAlignment",
+      "name": "Item right alignment",
+      "type": "Symbol",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false
+    }
+  ]
+}

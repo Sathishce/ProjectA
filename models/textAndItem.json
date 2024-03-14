@@ -1,0 +1,117 @@
+{
+  "sys": {
+    "space": {
+      "sys": {
+        "type": "Link",
+        "linkType": "Space",
+        "id": "i5kkknzh1ywi"
+      }
+    },
+    "id": "textAndItem",
+    "type": "ContentType",
+    "createdAt": "2023-12-27T06:12:17.246Z",
+    "updatedAt": "2024-03-05T04:52:51.588Z",
+    "environment": {
+      "sys": {
+        "id": "Dev",
+        "type": "Link",
+        "linkType": "Environment"
+      }
+    },
+    "revision": 7
+  },
+  "displayField": "internalName",
+  "name": "Text and Item",
+  "description": "Multipurpose block with text block and items.",
+  "fields": [
+    {
+      "id": "internalName",
+      "name": "Internal name",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "heading",
+      "name": "Heading",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "headingValue",
+      "name": "Heading value",
+      "type": "Symbol",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "text",
+      "name": "Text ",
+      "type": "Text",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "textPosition",
+      "name": "Text position",
+      "type": "Symbol",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "item",
+      "name": "Item",
+      "type": "Array",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false,
+      "items": {
+        "type": "Link",
+        "validations": [
+          {
+            "linkContentType": [
+              "accordionContainer",
+              "contentGrid",
+              "cta",
+              "image",
+              "itemItemWithHeading",
+              "navigationLink",
+              "separatorBlock",
+              "socialMedia",
+              "statsContainer",
+              "tab",
+              "testimonialBlock",
+              "textAndImage",
+              "textAndItem",
+              "textBlock",
+              "textCard",
+              "video"
+            ]
+          }
+        ],
+        "linkType": "Entry"
+      }
+    },
+    {
+      "id": "textAlignment",
+      "name": "Text alignment",
+      "type": "Symbol",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "sys": {
+    "space": {
+      "sys": {
+        "type": "Link",
+        "linkType": "Space",
+        "id": "i5kkknzh1ywi"
+      }
+    },
+    "id": "templateStandalonePage",
+    "type": "ContentType",
+    "createdAt": "2024-03-06T09:31:34.314Z",
+    "updatedAt": "2024-03-06T09:34:23.823Z",
+    "environment": {
+      "sys": {
+        "id": "Dev",
+        "type": "Link",
+        "linkType": "Environment"
+      }
+    },
+    "revision": 2
+  },
+  "displayField": "internalName",
+  "name": "Template - Standalone Page",
+  "description": "Template for standalone pages",
+  "fields": [
+    {
+      "id": "internalName",
+      "name": "Internal name",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "banner",
+      "name": "Banner",
+      "type": "Link",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "banner",
+            "homeHeroBanner"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "additionalComponents",
+      "name": "Additional Components",
+      "type": "Array",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "items": {
+        "type": "Link",
+        "validations": [],
+        "linkType": "Entry"
+      }
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "sys": {
+    "space": {
+      "sys": {
+        "type": "Link",
+        "linkType": "Space",
+        "id": "i5kkknzh1ywi"
+      }
+    },
+    "id": "templateSectionLandingPage",
+    "type": "ContentType",
+    "createdAt": "2024-03-13T09:12:03.854Z",
+    "updatedAt": "2024-03-13T09:12:03.854Z",
+    "environment": {
+      "sys": {
+        "id": "Dev",
+        "type": "Link",
+        "linkType": "Environment"
+      }
+    },
+    "revision": 1
+  },
+  "displayField": "internalName",
+  "name": "Template -  Section Landing Page",
+  "description": "Template for section landing pages",
+  "fields": [
+    {
+      "id": "internalName",
+      "name": "Internal name",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "banner",
+      "name": "Banner",
+      "type": "Link",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "banner",
+            "homeHeroBanner"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "servicesCarousel",
+      "name": "Services Carousel",
+      "type": "Link",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "carouselContainer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "banner2",
+      "name": "Banner 2",
+      "type": "Link",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "banner"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quickHelpCarousel",
+      "name": "Quick help Carousel",
+      "type": "Link",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "carouselContainer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imageAndItem1",
+      "name": "Image and Item 1",
+      "type": "Link",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "imageAndItem"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "textAndItem1",
+      "name": "Text and Item 1",
+      "type": "Link",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "textAndItem"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "testimonialsCarousel",
+      "name": "Testimonials Carousel",
+      "type": "Link",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "carouselContainer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "textAndItem2",
+      "name": "Text and Item 2",
+      "type": "Link",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "textAndItem"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "additionalComponents",
+      "name": "Additional Components",
+      "type": "Array",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "items": {
+        "type": "Link",
+        "validations": [],
+        "linkType": "Entry"
+      }
+    }
+  ]
+}

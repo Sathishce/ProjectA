@@ -1,0 +1,71 @@
+{
+  "sys": {
+    "space": {
+      "sys": {
+        "type": "Link",
+        "linkType": "Space",
+        "id": "i5kkknzh1ywi"
+      }
+    },
+    "id": "sectionLandingTemplate",
+    "type": "ContentType",
+    "createdAt": "2024-02-14T11:18:40.200Z",
+    "updatedAt": "2024-02-15T09:01:02.878Z",
+    "environment": {
+      "sys": {
+        "id": "Dev",
+        "type": "Link",
+        "linkType": "Environment"
+      }
+    },
+    "revision": 2
+  },
+  "displayField": "internalName",
+  "name": "Section landing template",
+  "description": "",
+  "fields": [
+    {
+      "id": "slug",
+      "name": "Slug",
+      "type": "Symbol",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "internalName",
+      "name": "Internal name",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "sections",
+      "name": "Sections",
+      "type": "Array",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false,
+      "items": {
+        "type": "Link",
+        "validations": [
+          {
+            "linkContentType": [
+              "banner",
+              "carouselContainer",
+              "tab",
+              "itemItemWithHeading",
+              "textAndItem",
+              "imageAndItem"
+            ]
+          }
+        ],
+        "linkType": "Entry"
+      }
+    }
+  ]
+}

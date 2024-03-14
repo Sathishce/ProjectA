@@ -1,0 +1,46 @@
+{
+  "sys": {
+    "space": {
+      "sys": {
+        "type": "Link",
+        "linkType": "Space",
+        "id": "i5kkknzh1ywi"
+      }
+    },
+    "id": "hubspotForm",
+    "type": "ContentType",
+    "createdAt": "2024-02-29T07:17:55.559Z",
+    "updatedAt": "2024-02-29T07:17:55.559Z",
+    "environment": {
+      "sys": {
+        "id": "Dev",
+        "type": "Link",
+        "linkType": "Environment"
+      }
+    },
+    "revision": 1
+  },
+  "displayField": "internalName",
+  "name": "Hubspot Form",
+  "description": "Model for hubspot forms",
+  "fields": [
+    {
+      "id": "internalName",
+      "name": "Internal name",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "formId",
+      "name": "Form Id",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "sys": {
+    "space": {
+      "sys": {
+        "type": "Link",
+        "linkType": "Space",
+        "id": "i5kkknzh1ywi"
+      }
+    },
+    "id": "demoTemplateBlock",
+    "type": "ContentType",
+    "createdAt": "2024-01-19T05:45:08.193Z",
+    "updatedAt": "2024-01-19T10:39:02.154Z",
+    "environment": {
+      "sys": {
+        "id": "Dev",
+        "type": "Link",
+        "linkType": "Environment"
+      }
+    },
+    "revision": 13
+  },
+  "displayField": "internalName",
+  "name": "Demo Template block",
+  "description": "Contains content blocks like Image and item, Text and item, Banner etc",
+  "fields": [
+    {
+      "id": "internalName",
+      "name": "Internal name",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "slug",
+      "name": "Slug",
+      "type": "Symbol",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false
+    },
+    {
+      "id": "sections",
+      "name": "Sections",
+      "type": "Array",
+      "localized": false,
+      "required": false,
+      "disabled": false,
+      "omitted": false,
+      "items": {
+        "type": "Link",
+        "validations": [
+          {
+            "linkContentType": [
+              "homeHeroBanner",
+              "banner",
+              "imageAndItem",
+              "itemItemWithHeading",
+              "statsContainer",
+              "textAndItem"
+            ]
+          }
+        ],
+        "linkType": "Entry"
+      }
+    },
+    {
+      "id": "metaData",
+      "name": "Meta data",
+      "type": "Link",
+      "localized": false,
+      "required": true,
+      "disabled": false,
+      "omitted": false,
+      "linkType": "Entry",
+      "validations": [
+        {
+          "linkContentType": [
+            "metaData"
+          ]
+        }
+      ]
+    }
+  ]
+}
